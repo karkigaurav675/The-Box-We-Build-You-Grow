@@ -1,0 +1,29 @@
+.section-reputation {
+  h2 {
+    @media (max-width: 575px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  .reputation-card {
+    border: 1px solid $neutral-100;
+    border-radius: 0.2rem;
+    transition: all 0.3s ease;
+
+    img {
+      width: 2rem;
+      height: auto;
+      object-fit: contain;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: $neutral-400;
+    }
+
+    &:hover {
+      box-shadow: 0 10px 30px $neutral-300;
+      transform: translateY(-4px);
+    }
+  }
+}

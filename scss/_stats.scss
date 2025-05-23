@@ -1,0 +1,123 @@
+.stats-section {
+  .z-10 {
+    z-index: 10;
+  }
+
+  .stat-card {
+    padding: 2rem;
+    overflow: visible;
+
+    @media (min-width: 992px) {
+      text-align: left;
+      width: max-content;
+      padding-right: 60px;
+    }
+
+    .stat-label {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 7px;
+        height: 100%;
+        background-color: $secondary;
+      }
+
+      @media (max-width: 991px) {
+        width: max-content;
+        margin-inline: auto;
+        padding-left: 0;
+        padding-top: 1.5rem;
+
+        &::after {
+          width: 100%;
+          height: 7px;
+          top: auto;
+          bottom: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+
+  .icon-float {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    &.top-0.end-0 {
+      top: 0;
+      right: 0;
+      transform: translate(50%, -50%);
+    }
+
+    &.top-0.start-0 {
+      top: 0;
+      left: 0;
+      transform: translate(-50%, -50%);
+    }
+
+    &.bottom-0.end-0 {
+      bottom: 0;
+      right: 0;
+      transform: translate(50%, 50%);
+    }
+
+    @media (max-width: 767px) {
+      width: 60px;
+      height: 60px;
+
+      &.top-0.end-0 {
+        transform: translate(10%, -10%);
+      }
+
+      &.top-0.start-0 {
+        transform: translate(-10%, -10%);
+      }
+
+      &.bottom-0.end-0 {
+        transform: translate(10%, 10%);
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    .mt-lg-n60 {
+      margin-top: -60px !important;
+    }
+
+    .mt-lg-n50 {
+      margin-top: -50px !important;
+    }
+
+    .mt-lg-n3 {
+      margin-top: -1rem !important;
+    }
+
+    .me-lg-74 {
+      margin-right: 4.625rem !important;
+    }
+
+    .ms-lg-50 {
+      margin-left: 3.125rem !important;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .mt-lg-n60,
+    .mt-lg-n50,
+    .mt-lg-n3,
+    .me-lg-74,
+    .ms-lg-50 {
+      margin: 0 !important;
+    }
+  }
+}

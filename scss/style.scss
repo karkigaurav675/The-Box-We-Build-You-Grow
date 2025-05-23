@@ -1,0 +1,55 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+$primary: #2947a9;
+$secondary: #f9995d;
+
+$neutral-50: #f6f8f7;
+$neutral-100: #e0e3eb;
+$neutral-200: #c2c7d6;
+$neutral-300: #a3aac2;
+$neutral-400: #858ead;
+$neutral-500: #667299;
+$neutral-600: #525b7a;
+$neutral-700: #3d445c;
+$neutral-800: #292e3d;
+$neutral-900: #14171f;
+
+$font-family-base: "Work Sans", sans-serif;
+
+$custom-theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "neutral-50": $neutral-50,
+  "neutral-100": $neutral-100,
+  "neutral-200": $neutral-200,
+  "neutral-300": $neutral-300,
+  "neutral-400": $neutral-400,
+  "neutral-500": $neutral-500,
+  "neutral-600": $neutral-600,
+  "neutral-700": $neutral-700,
+  "neutral-800": $neutral-800,
+  "neutral-900": $neutral-900,
+);
+
+$custom-container-max-widths: (
+  xxl: 1215px,
+);
+
+$theme-colors: map-merge(
+  $map1: $theme-colors,
+  $map2: $custom-theme-colors,
+);
+
+$container-max-widths: map-merge(
+  $map1: $container-max-widths,
+  $map2: $custom-container-max-widths,
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./hero";
+@import "./reasons";
+@import "./about";
+@import "./services";
+@import "./stats";
+@import "./promo";

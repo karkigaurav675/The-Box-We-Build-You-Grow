@@ -1,0 +1,54 @@
+.about-section {
+  overflow: hidden;
+
+  .about-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-card {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    max-width: 460px;
+    border-radius: 3px;
+    z-index: 2;
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .btn {
+      padding: 0.4rem 1rem;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    .about-card {
+      position: static;
+      transform: none;
+      margin-top: 2rem;
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .about-card {
+      padding: 1.5rem;
+    }
+
+    .about-card h4 {
+      font-size: 1.25rem;
+    }
+
+    .about-card p {
+      font-size: 0.95rem;
+    }
+
+    .btn {
+      font-size: 0.85rem;
+    }
+  }
+}

@@ -1,0 +1,94 @@
+.section-hero {
+  position: relative;
+
+  .grid-area {
+    grid-area: 1 / 1;
+  }
+
+  h1 {
+    width: 8em;
+
+    @media (max-width: 575px) {
+      font-size: calc(1.25rem + 3.9vw);
+      text-align: center;
+      margin-inline: auto;
+      color: $neutral-800;
+    }
+  }
+
+  .mobile-hero-heading {
+    top: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 90%;
+    z-index: 10;
+    text-align: center;
+    padding: 0 1rem;
+
+    h1 {
+      font-size: calc(1.25rem + 3.9vw);
+      text-align: center;
+      margin: 0 auto;
+      color: $neutral-800;
+    }
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  .carousel-controls {
+    width: min(415px, 35%);
+
+    button {
+      flex-grow: 1;
+      min-width: 6.25rem;
+      font-size: 18px;
+    }
+  }
+
+  .carousel-info-card {
+    width: min(415px, 35%);
+    position: absolute;
+    bottom: 38px;
+    right: 0;
+    left: auto;
+    z-index: 9;
+
+    @media (max-width: 575px) {
+      position: static;
+      width: 100%;
+    }
+  }
+
+  .swiper {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .swiper-pagination-bullet {
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: $primary;
+    opacity: 1;
+    margin: 0 4px;
+
+    &-active {
+      background-color: darken($primary, 15%);
+    }
+  }
+}

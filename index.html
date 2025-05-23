@@ -3,9 +3,949 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>The Box - We Build, You Grow</title>
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
-    Hello World!
+    <header>
+      <nav class="navbar navbar-expand-xl navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img src="./img/logo-company.svg" alt="logo-company" height="40"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarBasic"
+            aria-controls="navbarBasic"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse show" id="navbarBasic">
+            <ul class="navbar-nav ms-auto mb-2 mb-xl-0 gap-4">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-neutral-900 link-secondary"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-neutral-900 link-secondary" href="#"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-neutral-900 link-secondary" href="#"
+                  >Projects</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-neutral-900 link-secondary" href="#"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-secondary fw-semibold link-primary"
+                  href="#"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- 1. Hero Section -->
+      <section
+        class="section-hero d-grid align-items-center overflow-hidden position-relative"
+      >
+        <div class="grid-area z-3 d-none d-md-flex">
+          <div
+            class="container d-flex justify-content-start align-items-center h-100"
+          >
+            <h1 class="h1 text-neutral-800 fw-semibold">
+              Building things is our mission.
+            </h1>
+          </div>
+        </div>
+
+        <div
+          class="mobile-hero-heading d-md-none position-absolute text-center px-3"
+        >
+          <h1 class="h1 text-neutral-800 fw-semibold">
+            Building things is our mission.
+          </h1>
+        </div>
+
+        <div
+          id="heroCarousel"
+          class="carousel grid-area slide carousel-fade position-relative d-none d-md-block"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./img/Hero-bg.svg"
+                class="d-block w-100"
+                alt="hero-bg"
+              />
+              <div
+                class="carousel-caption d-none d-md-block carousel-info-card bg-primary text-white p-4"
+              >
+                <h3 class="fw-bold mb-4 fs-5">Feature Projects</h3>
+                <p class="fw-normal fs-4">
+                  The National University of Architecture
+                </p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="./img/hero-bg2.svg"
+                class="d-block w-100"
+                alt="hero-bg2"
+              />
+              <div
+                class="carousel-caption d-none d-md-block carousel-info-card bg-primary text-white p-4"
+              >
+                <h3 class="fw-bold mb-4 fs-5">Feature Projects</h3>
+                <p class="fw-normal fs-4">
+                  Lorem ipsum dolor sit amet consectetur.
+                </p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="./img/hero-bg3.svg"
+                class="d-block w-100"
+                alt="hero-bg3"
+              />
+              <div
+                class="carousel-caption d-none d-md-block carousel-info-card bg-primary text-white p-4"
+              >
+                <h3 class="fw-bold mb-4 fs-5">Feature Projects</h3>
+                <p class="fw-normal fs-4">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="carousel-controls d-none d-md-flex position-absolute bottom-0 end-0 z-1"
+            role="group"
+          >
+            <button
+              class="flex-grow-1 bg-neutral-800 text-white fw-normal border-0 py-2"
+              type="button"
+              data-bs-target="#heroCarousel"
+              data-bs-slide="prev"
+            >
+              <img src="./img/back-arrow.svg" alt="backArrow" /> Back
+            </button>
+            <button
+              class="flex-grow-1 bg-neutral-800 text-white fw-normal border-0 py-2"
+              type="button"
+              data-bs-target="#heroCarousel"
+              data-bs-slide="next"
+            >
+              Next <img src="./img/next-arrow.svg" alt="nextArrow" />
+            </button>
+          </div>
+        </div>
+
+        <div class="swiper d-md-none grid-area">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="./img/Hero-bg.svg"
+                class="d-block w-100"
+                alt="hero-bg"
+              />
+              <div class="carousel-info-card bg-primary text-white p-4">
+                <h3 class="fw-bold mb-4 fs-5">Feature Projects</h3>
+                <p class="fw-normal fs-4">
+                  The National University of Architecture
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                src="./img/hero-bg2.svg"
+                class="d-block w-100"
+                alt="hero-bg2"
+              />
+              <div class="carousel-info-card bg-primary text-white p-4">
+                <h3 class="fw-bold mb-4 fs-5">Feature Projects</h3>
+                <p class="fw-normal fs-4">
+                  Lorem ipsum dolor sit amet consectetur.
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                src="./img/hero-bg3.svg"
+                class="d-block w-100"
+                alt="hero-bg3"
+              />
+              <div class="carousel-info-card bg-primary text-white p-4">
+                <h3 class="fw-bold mb-4 fs-5">Feature Projects</h3>
+                <p class="fw-normal fs-4">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!-- 2. Reasons Section -->
+      <section class="section-reputation py-5">
+        <div class="container text-center">
+          <h2 class="fw-bold text-neutral-800 mb-5">Our Reputation</h2>
+          <div class="row g-5 justify-content-center mx-5">
+            <div class="col-md-4">
+              <div class="reputation-card p-4 h-100 text-start">
+                <img
+                  src="./img/icon-headset.svg"
+                  alt="Best Services"
+                  class="mb-3"
+                />
+                <h5 class="fw-semibold mb-2 text-neutral-700">Best Services</h5>
+                <p class="text-muted">
+                  Nullam senectus porttitor in eget. Eget rutrum leo interdum.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="reputation-card p-4 h-100 text-start">
+                <img
+                  src="./img/icon-headset.svg"
+                  alt="Best Teams"
+                  class="mb-3"
+                />
+                <h5 class="fw-semibold mb-2 text-neutral-700">Best Teams</h5>
+                <p class="text-muted">
+                  Cursus semper tellus volutpat aliquet lacus.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="reputation-card p-4 h-100 text-start">
+                <img
+                  src="./img/icon-ruler-pencil.svg"
+                  alt="Best Designs"
+                  class="mb-3"
+                />
+                <h5 class="fw-semibold mb-2 text-neutral-700">Best Designs</h5>
+                <p class="text-muted">
+                  Ultricies at ipsum nunc, tristique nam lectus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. About Us Section -->
+      <section class="about-section position-relative py-5">
+        <div class="container position-relative">
+          <div class="row">
+            <div class="col-lg-8">
+              <img
+                src="./img/about-us-img.svg"
+                alt="About Us"
+                class="img-fluid shadow-lg about-image rounded-3"
+              />
+            </div>
+          </div>
+
+          <div class="about-card bg-primary text-white p-4 p-md-5 shadow-lg">
+            <h4 class="fw-bold mb-3 fs-3">About us</h4>
+            <p class="mb-3">
+              For more than 30 years we have been delivering world-class
+              construction and we’ve built many lasting relationships along the
+              way.
+            </p>
+            <p class="mb-3">
+              We’ve matured into an industry leader and trusted resource for
+              those seeking quality, innovation and reliability when building in
+              the U.S.
+            </p>
+            <br />
+            <a
+              href="#"
+              class="btn btn-light btn-sm fw-semibold rounded-1 text-primary"
+              >More on Our History</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Services Section-->
+      <section class="service-section overflow-hidden py-5">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2 class="fw-bold text-neutral-800">Services</h2>
+          </div>
+
+          <div class="row g-4 g-lg-5 justify-content-center mx-5">
+            <div class="col-12 col-sm-6 col-lg-4 d-flex align-items-stretch">
+              <div
+                class="service-card bg-white text-primary p-5 text-center w-100"
+              >
+                <img
+                  src="./img/icon/construction-icon.svg"
+                  alt="Construction"
+                  class="mb-3 img-fluid mx-auto d-block"
+                />
+                <img
+                  src="./img/icon/decorative-line.svg"
+                  alt="decorative line"
+                  class="img-fluid pb-4 mx-auto d-block"
+                />
+                <h3 class="fw-semibold fs-5">Construction</h3>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 d-flex align-items-stretch">
+              <div
+                class="service-card bg-primary text-white p-5 text-center w-100"
+              >
+                <img
+                  src="./img/icon/renovation-icon.svg"
+                  alt="Renovation"
+                  class="mb-3 img-fluid mx-auto d-block"
+                />
+                <img
+                  src="./img/icon/decorative-line.svg"
+                  alt="decorative line"
+                  class="img-fluid pb-4 mx-auto d-block"
+                />
+                <h3 class="fw-semibold fs-5">Renovation</h3>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 d-flex align-items-stretch">
+              <div
+                class="service-card bg-white text-primary p-5 text-center w-100"
+              >
+                <img
+                  src="./img/icon/consultation-icon.svg"
+                  alt="Consultation"
+                  class="mb-3 img-fluid mx-auto d-block"
+                />
+                <img
+                  src="./img/icon/decorative-line.svg"
+                  alt="decorative line"
+                  class="img-fluid pb-4 mx-auto d-block"
+                />
+                <h3 class="fw-semibold fs-5">Consultation</h3>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 d-flex align-items-stretch">
+              <div
+                class="service-card bg-primary text-white p-5 text-center w-100"
+              >
+                <img
+                  src="./img/icon/repair-icon.svg"
+                  alt="Repair Services"
+                  class="mb-3 img-fluid mx-auto d-block"
+                />
+                <img
+                  src="./img/icon/decorative-line.svg"
+                  alt="decorative line"
+                  class="img-fluid pb-4 mx-auto d-block"
+                />
+                <h3 class="fw-semibold fs-5">Repair Services</h3>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 d-flex align-items-stretch">
+              <div
+                class="service-card bg-white text-primary p-5 text-center w-100"
+              >
+                <img
+                  src="./img/icon/architecture-icon.svg"
+                  alt="Architecture"
+                  class="mb-3 img-fluid mx-auto d-block"
+                />
+                <img
+                  src="./img/icon/decorative-line.svg"
+                  alt="decorative line"
+                  class="img-fluid pb-4 mx-auto d-block"
+                />
+                <h3 class="fw-semibold fs-5">Architecture</h3>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 d-flex align-items-stretch">
+              <div
+                class="service-card bg-primary text-white p-5 text-center w-100"
+              >
+                <img
+                  src="./img/icon/electric-icon.svg"
+                  alt="Electric"
+                  class="mb-3 img-fluid mx-auto d-block"
+                />
+                <img
+                  src="./img/icon/decorative-line.svg"
+                  alt="decorative line"
+                  class="img-fluid pb-4 mx-auto d-block"
+                />
+                <h3 class="fw-semibold fs-5">Electric</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. Stats Section -->
+      <section
+        class="stats-section py-5 pb-md-100 pt-lg-122 overflow-hidden mb-5 mt-5"
+      >
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-11">
+              <div class="row justify-content-between align-items-center">
+                <div class="col-12 col-lg-8 col-xl-6 order-1 order-lg-0">
+                  <div
+                    class="stats-wrapper d-flex gap-3 gap-lg-0 flex-column justify-content-between flex-lg-column flex-md-wrap"
+                  >
+                    <div
+                      class="stat-card bg-white shadow rounded-2 text-center text-lg-start p-30 position-relative ms-lg-auto z-10"
+                    >
+                      <div class="stat-icon icon-float top-0 end-0">
+                        <img
+                          src="./img/icon/happy-clients.svg"
+                          alt="Client Icon"
+                        />
+                      </div>
+                      <div
+                        class="stat-value h1 fw-bold text-neutral-800 mt-3 mt-md-0"
+                      >
+                        84
+                      </div>
+                      <div class="stat-label fs-5 text-neutral-500 ps-2">
+                        Happy Clients
+                      </div>
+                    </div>
+
+                    <div
+                      class="stat-card bg-white shadow rounded-2 text-center text-lg-start p-30 mt-lg-n60 position-relative z-3"
+                    >
+                      <div class="stat-icon icon-float top-0 start-0">
+                        <img
+                          src="./img/icon/projects-completed.svg"
+                          alt="Projects Icon"
+                        />
+                      </div>
+                      <div class="stat-value h1 fw-bold text-dark mt-3 mt-md-0">
+                        123
+                      </div>
+                      <div class="stat-label fs-5 text-neutral-500 ps-2">
+                        Projects Completed
+                      </div>
+                    </div>
+
+                    <div
+                      class="stat-card bg-white shadow rounded-2 text-center text-lg-start p-30 mt-lg-n3 me-lg-74 ms-lg-auto position-relative z-10"
+                    >
+                      <div class="stat-icon icon-float top-0 end-0">
+                        <img src="./img/icon/awards-won.svg" alt="Award Icon" />
+                      </div>
+                      <div class="stat-value h1 fw-bold text-dark mt-3 mt-md-0">
+                        37
+                      </div>
+                      <div class="stat-label fs-5 text-neutral-500 ps-2">
+                        Awards Won
+                      </div>
+                    </div>
+
+                    <div
+                      class="stat-card bg-white shadow rounded-2 text-center text-lg-start p-30 ms-lg-50 mt-lg-n50 position-relative"
+                    >
+                      <div class="stat-icon icon-float bottom-0 end-0">
+                        <img
+                          src="./img/icon/years-in.svg"
+                          alt="Business Icon"
+                        />
+                      </div>
+                      <div class="stat-value h1 fw-bold text-dark mt-3 mt-md-0">
+                        30
+                      </div>
+                      <div class="stat-label fs-5 text-neutral-500 ps-2">
+                        Years in Business
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="col-12 col-lg-4 col-xl-4 text-center text-lg-start p-5 p-lg-0"
+                >
+                  <div class="intro-content">
+                    <h1 class="section-title text-primary mb-4 fw-bold">
+                      30 Years Experience
+                    </h1>
+                    <p class="section-desc fs-5 text-neutral-600 mb-5">
+                      Our company has been a leading provider of construction
+                      services to clients across the USA since 1988.
+                    </p>
+                    <a
+                      href="#"
+                      class="btn btn-primary text-white py-3 px-5 fw-semibold fs-5"
+                      >Contact Us</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 6. Ads Section -->
+      <section class="promo-banner">
+        <div class="promo-overlay">
+          <div class="container">
+            <div
+              class="row justify-content-between align-items-center text-center text-md-start"
+            >
+              <div class="col-12 col-md-9 pt-4 pt-lg-0">
+                <h2 class="promo-title fw-bold text-white">
+                  Free consultation with exceptional quality
+                </h2>
+                <p class="promo-contact mb-0 text-white fw-normal">
+                  Just one call away:
+                  <a
+                    href="tel:+84 1102 2703"
+                    class="promo-link text-white text-decoration-underline fw-normal"
+                  >
+                    +84 1102 2703
+                  </a>
+                </p>
+              </div>
+              <div class="col-12 col-md-3 text-md-end mt-4 mt-md-0">
+                <a href="#" class="promo-btn btn btn-outline-light">
+                  Get your consultation
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 7. Projects Section -->
+      <section class="project-swiper-section py-5 mt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 mb-4">
+              <h5 class="fw-bold text-neutral-800 fs-2">Projects</h5>
+              <ul class="nav flex-column mt-4">
+                <li class="nav-item mb-2">
+                  <a
+                    class="nav-link active ps-2 border-start border-primary border-3 text-primary fw-bold"
+                    href="#"
+                    >All</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a class="nav-link text-muted link-secondary" href="#"
+                    >Commercial</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a class="nav-link text-muted link-secondary" href="#"
+                    >Residential</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-muted link-secondary" href="#"
+                    >Other</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-md-9">
+              <div class="swiper projectSwiper">
+                <div class="swiper-wrapper">
+                  <!-- Slide 1 -->
+                  <div class="swiper-slide">
+                    <div class="row g-4">
+                      <div class="col-md-6">
+                        <div class="card border-0">
+                          <img
+                            src="./img/ProjectCard.svg"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="bg-primary text-white p-2">
+                            <h6 class="fw-bold mb-1">Wildstone Infra Hotel</h6>
+                            <p class="mb-0 small">
+                              2715 Ash Dr. San Jose, South Dakota
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card border-0">
+                          <img
+                            src="./img/ProjectCard-2.svg"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="bg-primary text-white p-2">
+                            <h6 class="fw-bold mb-1">Wish Stone Building</h6>
+                            <p class="mb-0 small">
+                              2972 Westheimer Rd. Santa Ana, Illinois
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card border-0">
+                          <img
+                            src="./img/ProjectCard-3.svg"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="bg-primary text-white p-2">
+                            <h6 class="fw-bold mb-1">Mr. Parkinson’s House</h6>
+                            <p class="mb-0 small">
+                              3517 W. Gray St. Utica, Pennsylvania
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card border-0">
+                          <img
+                            src="./img/ProjectCard-4.svg"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="bg-primary text-white p-2">
+                            <h6 class="fw-bold mb-1">Oregano Height</h6>
+                            <p class="mb-0 small">
+                              2464 Royal Ln. Mesa, New Jersey
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Slide 2 -->
+                  <div class="swiper-slide">
+                    <div class="row g-4">
+                      <div class="col-md-6">
+                        <div class="card border-0">
+                          <img
+                            src="./img/ProjectCard-2.svg"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="bg-primary text-white p-2">
+                            <h6 class="fw-bold mb-1">Lorem, ipsum dolor.</h6>
+                            <p class="mb-0 small">
+                              Lorem ipsum dolor sit amet.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card border-0">
+                          <img
+                            src="./img/ProjectCard-4.svg"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="bg-primary text-white p-2">
+                            <h6 class="fw-bold mb-1">Lorem ipsum dolor sit.</h6>
+                            <p class="mb-0 small">
+                              Lorem ipsum dolor sit amet consectetur.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card border-0">
+                          <img
+                            src="./img/ProjectCard.svg"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="bg-primary text-white p-2">
+                            <h6 class="fw-bold mb-1">
+                              Lorem ipsum dolor sit amet.
+                            </h6>
+                            <p class="mb-0 small">
+                              Lorem ipsum dolor sit amet consectetur
+                              adipisicing.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card border-0">
+                          <img
+                            src="./img/ProjectCard-3.svg"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="bg-primary text-white p-2">
+                            <h6 class="fw-bold mb-1">
+                              Lorem ipsum dolor sit amet.
+                            </h6>
+                            <p class="mb-0 small">
+                              Lorem ipsum dolor sit amet consectetur.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="custom-navigation d-md-flex justify-content-between align-items-center mt-4 mb-4"
+                >
+                  <button
+                    class="custom-prev d-none d-sm-block bg-neutral-800 text-white fw-normal border-0 py-3 px-5 w-25"
+                    type="button"
+                  >
+                    <img src="./img/back-arrow.svg" alt="backArrow" /> Back
+                  </button>
+
+                  <div
+                    class="custom-pagination d-flex justify-content-center gap-1 order-3 order-md-0"
+                  ></div>
+
+                  <button
+                    class="custom-next d-none d-sm-block bg-neutral-800 text-white fw-normal border-0 py-3 px-5 w-25"
+                    type="button"
+                  >
+                    Next <img src="./img/next-arrow.svg" alt="nextArrow" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 8. CTA Section -->
+      <section class="contact-section py-5 bg-neutral-50">
+        <div class="container">
+          <div class="text-center mb-4">
+            <h2 class="fw-bold text-neutal-800">What can we do for you?</h2>
+            <p class="text-neutral-800">
+              We are ready to work on a project of any complexity, <br />
+              whether it’s commercial or residential.
+            </p>
+          </div>
+
+          <form>
+            <div class="row g-3 justify-content-center">
+              <div class="col-md-5">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Your Name*"
+                  required
+                />
+              </div>
+
+              <div class="col-md-5">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Email*"
+                  required
+                />
+              </div>
+
+              <div class="col-md-5">
+                <select class="form-select" required>
+                  <option value="" disabled selected>
+                    Reason for Contacting*
+                  </option>
+                  <option value="commercial">Commercial Project</option>
+                  <option value="residential">Residential Project</option>
+                  <option value="partnership">Partnership Inquiry</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="col-md-5">
+                <input type="tel" class="form-control" placeholder="Phone" />
+              </div>
+
+              <div class="col-md-10">
+                <textarea
+                  class="form-control"
+                  rows="4"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+
+              <div class="col-md-10 text-start">
+                <small class="text-danger"
+                  >*
+                  <small class="text-neutral-500">
+                    indicates a required field</small
+                  ></small
+                >
+              </div>
+
+              <div class="col-md-10 text-center">
+                <button
+                  type="submit"
+                  class="btn btn-primary px-5 fw-semibold rounded-1"
+                >
+                  Submit
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="pt-5 mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <strong class="text-uppercase text-primary fw-medium"
+                  >Address:</strong
+                >
+                <span>6391 Elgin St. Celina, Delaware 10299</span>
+              </li>
+              <li class="mb-2">
+                <strong class="text-uppercase text-primary fw-medium"
+                  >Phone:</strong
+                >
+                <span>+84 1102 2703</span>
+              </li>
+              <li class="mb-2">
+                <strong class="text-uppercase text-primary fw-medium"
+                  >Email:</strong
+                >
+                <span>hello@thebox.com</span>
+              </li>
+            </ul>
+            <img
+              src="./img/logo-company.svg"
+              alt="TheBox Logo"
+              class="mt-3"
+              style="height: 40px"
+            />
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="mb-3">
+              <strong class="text-uppercase text-primary fw-medium"
+                >Newsletter:</strong
+              >
+              <div class="d-flex mt-2">
+                <input
+                  type="email"
+                  class="form-control me-2"
+                  placeholder="Your email here"
+                />
+                <button class="btn btn-secondary px-3 text-white fw-semibold">
+                  Subscribe
+                </button>
+              </div>
+            </div>
+            <div>
+              <strong class="text-uppercase text-primary fw-medium"
+                >Social:</strong
+              >
+              <div class="d-flex gap-3 mt-2">
+                <a href="#"
+                  ><img
+                    src="./img/icon/facebook-icon.svg"
+                    alt="Facebook"
+                    width="30"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="./img/icon/linkedin-icon.svg"
+                    alt="LinkedIn"
+                    width="30"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="./img/icon/twitter-icon.svg"
+                    alt="Twitter"
+                    width="30"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-primary text-white py-3 mt-4 text-start mt-4">
+        <div class="container">
+          <small>TheBox Company &copy 2022. All Rights Reserved</small>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const mobileHeroSwiper = new Swiper(".swiper", {
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+
+      const projectSwiper = new Swiper(".projectSwiper", {
+        loop: true,
+        pagination: {
+          el: ".custom-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".custom-next",
+          prevEl: ".custom-prev",
+        },
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

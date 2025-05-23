@@ -1,0 +1,38 @@
+.promo-banner {
+  background-image: url("../img/ad-space.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+  .promo-overlay {
+    padding: 4rem 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .promo-title {
+    font-size: 2rem;
+
+    @media (min-width: 768px) {
+      font-size: 2.25rem;
+    }
+  }
+
+  .promo-contact {
+    font-size: 1.125rem;
+    margin-top: 0.5rem;
+  }
+
+  .promo-btn {
+    font-size: 1rem;
+    border: 2px solid $neutral-50;
+    padding: 0.75rem 1.5rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: $neutral-50;
+      color: $neutral-900;
+    }
+  }
+}
