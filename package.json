@@ -1,0 +1,22 @@
+{
+  "name": "the-box-we-build-you-grow",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karkigaurav675/The-Box-We-Build-You-Grow.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karkigaurav675/The-Box-We-Build-You-Grow/issues"
+  },
+  "homepage": "https://github.com/karkigaurav675/The-Box-We-Build-You-Grow#readme",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.3.6"
+  }
+}
